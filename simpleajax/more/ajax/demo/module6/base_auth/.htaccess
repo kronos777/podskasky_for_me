@@ -1,0 +1,9 @@
+AuthType Basic
+AuthName "Private zone. Only for valid users!"
+AuthUserFile "C:\OpenServer\domains\borisich\ajax\demo\module6\base_auth\.htpasswd"
+require valid-user
+
+#
+#<Files .htpasswd>
+ # deny from all
+#</Files> 

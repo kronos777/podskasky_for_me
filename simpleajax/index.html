@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>load demo</title>
+  <style>
+  body {
+    font-size: 12px;
+    font-family: Arial;
+  }
+  
+  
+  #holder {
+    margin: 0 auto;
+	width: 400px;
+	border: 2px solid black;
+	padding: 15px;
+  }
+  </style>
+  
+</head>
+<body>
+ <div id="holder">
+<b>Projects:</b>
+<ol id="new-projects">
+<li>php</li>
+<li>php2</li>
+<li>php4</li>
+<li>php5</li>
+<li>php6</li>
+<li>php7</li>
+</ol>
+ <button id="text">Text </button>
+ <button id="page">Page </button>
+ <div id="loader"> </div>
+ </div>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+<script>
+  $(document).ready(function(){
+  $('#text').click(function() {
+    $.post('./load.php', {}, function(data){
+	  $('#loader').html(data);
+	})
+  });
+  /*$('#text').click(function() {
+    $('#loader').load('./text.html', function() {
+	  alert('Load Yes');
+	});
+  });
+    $('#page').click(function() {
+    $('#loader').load('./page.html', function() {
+	  alert('Load page Yes');
+	});
+  });
+  */
+  });
+</script> 
+</body>
+</html>
