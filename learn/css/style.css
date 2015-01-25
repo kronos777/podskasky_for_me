@@ -1,0 +1,51 @@
+/*.span3 { background-color: green;}
+.span9 { background-color: grey;}*/
+
+body {
+  /*background: url(http://presite.ru/images/stories/WebDevelopment.jpg);*/
+
+}
+
+#header {background: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPHE1pfR6ZVWsRD2r3R1zX3XZcaXKQc7FJyYhkkWQpqt3oci0iLA); height: 260px;}
+/*https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPHE1pfR6ZVWsRD2r3R1zX3XZcaXKQc7FJyYhkkWQpqt3oci0iLA*/
+.navbar{ width: 90%; margin: 5px auto;}
+
+#menu { margin: 0; padding: 5px; color: white;}
+#tabs { font-size: 14px;}
+#footer { background: url(http://ioncondos.com/Content/Images/interface/footerBackground.jpg); height: 260px; }
+
+#container {
+  margin: 15px auto;
+  width: 1000px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 15px;
+  
+}
+
+.news { border: 1px solid red; float: left }
+.table {
+  margin: 10px 0;
+}
+thead { background-color: red; color: white;}
+
+
+input[type=text], textarea {
+outline: none;
+padding: 5px;
+margin: 5px;
+border: 1px solid #DDDDDD;
+}
+input[type=text]:focus, textarea:focus {
+border-color:#56b4ef;
+box-shadow:inset 0 1px 3px rgba(0,0,0,.05),0 0 8px rgba(82,168,236,.6);
+-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.05),0 0 8px rgba(82,168,236,.6);
+-moz-box-shadow:inset 0 1px 3px rgba(0,0,0,.05),0 0 8px rgba(82,168,236,.6);
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    width:  100%;
+    }
+    
+ #accordion {
+    font-size: 15px !important;
+ }
